@@ -1,0 +1,143 @@
+.banner-sobre {
+    background-image: url('/public/assets/banner-sobre.png');
+    background-color: #fadc7a;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 70vh;
+    margin-top: 80px;
+}
+
+.banner-sobre-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.banner-sobre-content h1 {
+    font-size: 100px;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 2px #000;
+}
+
+/*seção sobre*/
+
+.sobre-text {
+    height: 100%;
+    margin-top: 70px;
+}
+
+.sobre-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-subtitle {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.conteudo-sobre {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/*section flex imagens -- section final*/
+
+
+.flex-img-sobre {
+    display: flex;
+    height: 100%;
+    margin-top: 40px;
+    margin-bottom: -3px;
+}
+
+.flex-img-sobre img {
+    min-width: 50%;
+    object-fit: cover;
+}
+
+/*responsivo*/
+
+@media (min-width:437px) and (max-width:768px) {
+
+
+    .banner-sobre-content h1 {
+        font-size: 70px;
+    }
+
+    /*seção sobre*/
+
+
+    .conteudo-sobre {
+        text-align: center;
+        margin-bottom: 25px;
+        width: 85%;
+    }
+
+
+    /*section flex imagens -- section final*/
+
+
+    .flex-img-sobre {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 40px;
+        margin-bottom: -3px;
+    }
+
+    .flex-img-sobre img {
+        min-width: 100%;
+        min-height: 50%;
+        object-fit: cover;
+    }
+
+}
+
+
+@media (max-width:436px) {
+
+    .banner-sabores {
+        height: 60vh;
+    }
+
+    .banner-sobre-content {
+        height: 100%;
+        width: 90%;
+    }
+
+
+    .banner-sobre-content h1 {
+        font-size: 50px;
+        text-shadow: 2px 4px 4px #000;
+    }
+
+    /*seção sobre*/
+
+
+    .conteudo-sobre {
+        text-align: center;
+        margin-bottom: 25px;
+        width: 85%;
+    }
+
+
+    /*section flex imagens -- section final*/
+
+
+    .flex-img-sobre {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 40px;
+        margin-bottom: -3px;
+    }
+
+
+}

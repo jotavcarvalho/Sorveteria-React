@@ -1,0 +1,246 @@
+/*sectio banner*/
+
+.banner {
+    background-image: url('/public/assets/banner-home.png');
+    background-color: #fadc7a;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 90vh;
+    margin-top: 80px;
+}
+
+.banner-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.banner-section h1 {
+    font-size: 80px;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 2px #000;
+}
+
+/*section sabores*/
+
+.sabores,
+.eventos,
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.eventos {
+    margin-top: 2.2px;
+}
+
+.sobre {
+    margin-top: 6px;
+}
+
+.sabores img,
+.eventos img,
+.sobre img {
+    min-width: 50%;
+    object-fit: cover;
+}
+
+
+
+/*flex das sections de conteudo principal*/
+
+.flex-apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    height: 100%;
+}
+
+.flex-apresentacao h2 {
+    font-size: 36px;
+}
+
+.flex-apresentacao .p-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -30px;
+    font-style: italic;
+}
+
+.flex-apresentacao .p-subtitle-eventos {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -50px;
+    font-style: italic;
+}
+
+.flex-apresentacao p {
+    color: #000;
+    line-height: 32px;
+}
+
+
+
+/*responsivo*/
+
+@media (min-width:437px) and (max-width:768px) {
+
+    .banner {
+        height: 80vh;
+    }
+
+
+    .banner-section h1 {
+        font-size: 70px;
+    }
+
+
+    /*sections */
+
+    .sabores, .sobre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .eventos {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .sabores img,
+    .eventos img,
+    .sobre img {
+        height: 50%;
+        min-width: 100%;
+    }
+
+    /* agrupa infos das sections --- flex*/
+
+    .flex-apresentacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px;
+        height: 100%;
+        width: 85%;
+    }
+    
+    .flex-apresentacao h2 {
+        font-size: 36px;
+    }
+    
+    .flex-apresentacao .p-subtitle {
+        font-size: 22px;
+        font-weight: bold;
+        margin: -50px 0px 5px;
+        font-style: italic;
+    }
+    
+    .flex-apresentacao .p-subtitle-eventos {
+        font-size: 22px;
+        font-weight: bold;
+        margin: -5px 0px 40px;
+        font-style: italic;
+    }
+
+    .flex-apresentacao p{
+        text-align: justify;
+        font-size: 20px;
+    }
+
+
+}
+
+
+@media (max-width:436px) {
+    .banner {
+        height: 70vh;
+    }
+
+    .banner-section {
+        height: 100%;
+        width: 50%;
+    }
+
+    .banner-section h1 {
+        font-size: 70px;
+        text-align: center;
+        text-shadow: 2px 4px 4px #000;
+    }
+
+
+    /*sections */
+
+    .sabores, .sobre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .eventos {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .sabores img,
+    .eventos img,
+    .sobre img {
+        height: 30%;
+        min-width: 100%;
+    }
+
+    /* agrupa infos das sections --- flex*/
+
+    .flex-apresentacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .flex-apresentacao h2 {
+        font-size: 36px;
+    }
+    
+    .flex-apresentacao .p-subtitle {
+        font-size: 22px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    .flex-apresentacao .p-subtitle-eventos {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top:-70px;
+        font-style: italic;
+    }
+
+    .flex-apresentacao .conteudo-section{
+        text-align: center;
+        font-size: 20px;
+        width: 85%;
+    }
+
+}
