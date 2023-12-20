@@ -113,21 +113,19 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-    }
+}
 
     .eventos {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-    }
+}
 
     .sabores img,
     .eventos img,
     .sobre img {
-        height: 50%;
+        height: 40%;
         min-width: 100%;
     }
 
@@ -138,7 +136,6 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        padding: 50px;
         height: 100%;
         width: 85%;
     }
@@ -150,14 +147,13 @@
     .flex-apresentacao .p-subtitle {
         font-size: 22px;
         font-weight: bold;
-        margin: -50px 0px 5px;
         font-style: italic;
+        padding-top:15px;
     }
     
     .flex-apresentacao .p-subtitle-eventos {
         font-size: 22px;
         font-weight: bold;
-        margin: -5px 0px 40px;
         font-style: italic;
     }
 
