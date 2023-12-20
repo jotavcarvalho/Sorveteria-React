@@ -1,5 +1,6 @@
 /*section banner*/
 
+
 .banner {
     background-image: url('/public/assets/banner-home.png');
     background-color: #fadc7a;
@@ -24,32 +25,23 @@
     text-shadow: 2px 2px 2px #000;
 }
 
-/*section sabores*/
-
-.sabores,
-.eventos,
-.sobre {
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-}
-.sabores{
-    margin: 3px;
 }
 
-.eventos {
-    margin-top: 10px;
+/*section sabores*/
+
+.exposicao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.sobre {
-    margin-top:14px;
-    margin-bottom: 7px;
-}
 
-.sabores img,
-.eventos img,
-.sobre img {
+.exposicao img {
     min-width: 50%;
     object-fit: cover;
 }
@@ -63,7 +55,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 100px;
+    padding: 40px;
     height: 100%;
 }
 
@@ -74,25 +66,94 @@
 .flex-apresentacao .p-subtitle {
     font-size: 22px;
     font-weight: bold;
-    margin-top: -30px;
     font-style: italic;
 }
 
-.flex-apresentacao .p-subtitle-eventos {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: -50px;
-    font-style: italic;
-}
-
-.flex-apresentacao p {
+.conteudo-section {
     color: #000;
     line-height: 32px;
+    width: 80%;
+    text-align: center;
 }
 
 
 
 /*responsivo*/
+
+
+@media (min-width:769px) and (max-width:1200px) {
+    .banner {
+        height: 60vh;
+    }
+
+    .banner-section h1 {
+        font-size: 4.5rem;
+        text-align: center;
+      
+    }
+
+    
+    /*sections */
+
+    .exposicao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eventos {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exposicao img {
+        height: 33%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    /* agrupa infos das sections --- flex*/
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eventos {
+        flex-direction: column-reverse;
+    }
+
+
+    .flex-apresentacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    .flex-apresentacao h2 {
+        font-size: 36px;
+    }
+
+    .flex-apresentacao .p-subtitle {
+        font-size: 22px;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .conteudo-section {
+        font-size: 24px;
+    }
+
+
+}
 
 @media (min-width:437px) and (max-width:768px) {
 
@@ -108,28 +169,40 @@
 
     /*sections */
 
-    .sabores, .sobre {
+    .exposicao {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-}
+    }
 
     .eventos {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-}
-
-    .sabores img,
-    .eventos img,
-    .sobre img {
-        height: 40%;
-        min-width: 100%;
     }
 
+    .exposicao img {
+        height: 33%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
     /* agrupa infos das sections --- flex*/
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eventos {
+        flex-direction: column-reverse;
+    }
+
 
     .flex-apresentacao {
         display: flex;
@@ -137,28 +210,19 @@
         justify-content: space-around;
         align-items: center;
         height: 100%;
-        width: 85%;
     }
-    
+
     .flex-apresentacao h2 {
         font-size: 36px;
     }
-    
+
     .flex-apresentacao .p-subtitle {
-        font-size: 22px;
-        font-weight: bold;
-        font-style: italic;
-        padding-top:15px;
-    }
-    
-    .flex-apresentacao .p-subtitle-eventos {
         font-size: 22px;
         font-weight: bold;
         font-style: italic;
     }
 
-    .flex-apresentacao p{
-        text-align: justify;
+    .conteudo-section {
         font-size: 20px;
     }
 
@@ -186,31 +250,29 @@
 
     /*sections */
 
-    .sabores, .sobre,.eventos {
+    .exposicao {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .sabores,.sobre{
         flex-direction: column;
     }
 
-    .eventos{
-        flex-direction:column-reverse;
-    }
-
-
-    .sabores img,
-    .eventos img,
-    .sobre img {
+    .exposicao img {
         height: 33%;
         width: 100%;
         object-fit: cover;
     }
-    
+
     /* agrupa infos das sections --- flex*/
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eventos {
+        flex-direction: column-reverse;
+    }
 
     .flex-apresentacao {
         display: flex;
@@ -221,27 +283,23 @@
         height: 100%;
         width: 100%;
     }
-    
+
     .flex-apresentacao h2 {
         font-size: 30px;
         text-align: center;
     }
-    
+
     .flex-apresentacao .p-subtitle {
         font-size: 22px;
         font-weight: bold;
         font-style: italic;
-        padding:25px;    
-        margin-bottom: -25px;
-        width:100%;
+        width: 100%;
         text-align: center;
     }
-    
- 
-    .flex-apresentacao .conteudo-section{
-        text-align: center;
+
+
+    .conteudo-section {
         font-size: 20px;
-        width: 85%;
     }
 
 }

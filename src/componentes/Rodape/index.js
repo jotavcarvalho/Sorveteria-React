@@ -9,18 +9,18 @@ function Rodape() {
                 <img src='assets/logo.png' />
                 <div className='agrupa-infos-footer'>
                     <h3>ENDEREÇO</h3>
-                    <p>Av. Bernardino de Campos, 98</p>
-                    <p>São Paulo, SP 12345-678</p>
+                    <p>Rua Inácia Alves, 312</p>
+                    <p>São Paulo, SP 08559-050</p>
                 </div>
                 <div className='agrupa-infos-footer'>
                     <h3>CONTATO</h3>
-                    <p>info@meusite.com</p>
-                    <p>Tel: (11) 3456-7890</p>
+                    <p>gelateria@email.com</p>
+                    <p>Tel: (11) 99956-2490</p>
                 </div>
                 <div className='agrupa-infos-footer'>
                     <h3>HORÁRIOS</h3>
                     <p>ABERTO TODOS OS DIAS</p>
-                    <p>10:00 - 22:00</p>
+                    <p>08:00 - 20:00</p>
                 </div>
             </div>
             <div className='limite-largura credits'>
