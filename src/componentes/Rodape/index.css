@@ -95,6 +95,7 @@ footer{
     
     .footer-content img {
         width: 100px;
+        padding-top:30px;
     }
     
     .agrupa-infos-footer{
@@ -110,14 +111,15 @@ footer{
     
     .agrupa-infos-footer p{
         font-size: 14px;
+        text-align: center;
     }
     
     /*creditos*/
     
     .credits{
         text-align: center;
-        padding:40px 0px 15px;
-        width: 75%;
+        padding:50px 0px 15px;
+        width: 85%;
     }
 
 }
