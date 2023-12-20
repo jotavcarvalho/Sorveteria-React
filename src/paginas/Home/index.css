@@ -1,4 +1,4 @@
-/*sectio banner*/
+/*section banner*/
 
 .banner {
     background-image: url('/public/assets/banner-home.png');
@@ -34,13 +34,17 @@
     align-items: center;
     height: 70vh;
 }
+.sabores{
+    margin: 3px;
+}
 
 .eventos {
-    margin-top: 2.2px;
+    margin-top: 10px;
 }
 
 .sobre {
-    margin-top: 6px;
+    margin-top:14px;
+    margin-bottom: 7px;
 }
 
 .sabores img,
@@ -169,6 +173,7 @@
 @media (max-width:436px) {
     .banner {
         height: 70vh;
+        background-size: contain;
     }
 
     .banner-section {
@@ -177,7 +182,7 @@
     }
 
     .banner-section h1 {
-        font-size: 70px;
+        font-size: 50px;
         text-align: center;
         text-shadow: 2px 4px 4px #000;
     }
@@ -201,13 +206,15 @@
         height: 100vh;
     }
 
+
     .sabores img,
     .eventos img,
     .sobre img {
-        height: 30%;
-        min-width: 100%;
+        height: 33%;
+        width: 100%;
+        object-fit: cover;
     }
-
+    
     /* agrupa infos das sections --- flex*/
 
     .flex-apresentacao {
@@ -215,28 +222,24 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        padding: 50px;
+        padding: 10px 0px 50px;
         height: 100%;
         width: 100%;
     }
     
     .flex-apresentacao h2 {
-        font-size: 36px;
+        font-size: 30px;
+        text-align: center;
     }
     
     .flex-apresentacao .p-subtitle {
         font-size: 22px;
         font-weight: bold;
         font-style: italic;
+        padding:25px;    
     }
     
-    .flex-apresentacao .p-subtitle-eventos {
-        font-size: 22px;
-        font-weight: bold;
-        margin-top:-70px;
-        font-style: italic;
-    }
-
+ 
     .flex-apresentacao .conteudo-section{
         text-align: center;
         font-size: 20px;
