@@ -27,7 +27,7 @@ function Home() {
         <section className='eventos'>
           <div className='flex-apresentacao'>
             <h2>NOSSOS EVENTOS</h2>
-            <p className='p-subtitle-eventos'>Delicias com sorvete!</p>
+            <p className='p-subtitle'>Delicias com sorvete!</p>
             <p className='conteudo-section'>Mais do que uma sorveteria, uma extensão da sua casa! Estamos aqui prontinhos para te atender e oferecer
               os melhores eventos com os melhores sorvete da sua vida! Venha nos conhecer e passar um tempo aqui com a gente.</p>
           </div>

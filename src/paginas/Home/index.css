@@ -172,7 +172,7 @@
 
 @media (max-width:436px) {
     .banner {
-        height: 70vh;
+        height: 75vh;
         background-size: contain;
     }
 
@@ -190,20 +190,19 @@
 
     /*sections */
 
-    .sabores, .sobre {
+    .sabores, .sobre,.eventos {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100vh;
     }
 
-    .eventos {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+    .sabores,.sobre{
+        flex-direction: column;
+    }
+
+    .eventos{
+        flex-direction:column-reverse;
     }
 
 
@@ -237,6 +236,9 @@
         font-weight: bold;
         font-style: italic;
         padding:25px;    
+        margin-bottom: -25px;
+        width:100%;
+        text-align: center;
     }
     
  
